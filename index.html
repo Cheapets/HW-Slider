@@ -1,0 +1,108 @@
+<!--
+	Name: Sonny Chea
+	Computer Science Department, Umass Lowell
+	Comp.4610, GUI Programming I
+	File
+	Created: 07-dec-2017
+	Last Updated by SC: 07-dec-2017
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Assignment #6</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+	<script src="js/function.js"></script>
+	<script>
+    $( document ).ready(function() {
+        slider();         
+        validate();        
+        auto_submit(); 
+    });
+  </script>
+  
+  <div id="whole_page">
+    <div>
+        <h2 id="top_part">Interactive Dynamic Table</h2>
+          <div id = "data">
+            <form>
+        	     <div id="car_price">
+                  <label>Car Price: </label><br>
+                  <input type="number" id = "car" name = "name" required>
+                  <div id="slider_hor_start"></div>
+                </div>
+        			   <div id="fuel_con">
+                  <label>Fuel Consumption: </label><br>
+                  <input type="number" id = "fuel" name = "age" required>
+                  <div id="slider_vert_start"></div>
+                </div>
+                <input id = "button" type = "button" value = "Add" onclick = "AddData()">
+            </form>
+          </div>
+        </div>
+      
+      <div id="tabs">
+          <ul>
+          </ul>
+        </div>
+
+
+		<table>
+			<p>Please Enter: <input id="month" name="mily" type="number" placeholder="Miles Driven Per Month"> 
+			<button onclick="myFunction()">Calcuate</button>
+			</p>
+            <div class="container">
+                      <div id = "tables">
+                      <form id ="post">
+                          <table class="table1" id="table1" border="1">
+                              <tr>
+                                  <th>Price/Fuel consumption</th>
+                                  <th><input id="R1" type="number" name="p1" placeholder="Price 1"></th>
+                                  <th><input id="R2" type="number" name="p2" placeholder="Price 2"></th>
+                          				<th><input id="R3" type="number" name="p3" placeholder="Price 3"></th>
+                          				<th><input id="R4" type="number" name="p4" placeholder="Price 4"></th>
+                              </tr>
+                              <tr id="show_1">
+                                  <th><input id="C1" type="number" name="C1" placeholder="Mpg 1"></th>
+                                  <td id="oneone" >0.0</td>
+                                  <td>0.0</td>
+              				            <td>0.0</td>
+                                  <td>0.0</td>                    
+                              </tr>
+                              <tr id="show_2">
+                                  <th><input id="C2" type="number" name="C2" placeholder="Mpg 2"></th>
+                                  <td>0.0</td>
+                                  <td>0.0</td>
+                          				<td>0.0</td>
+                          				<td>0.0</td>
+                              </tr>
+                                <tr id="show_3">
+                                  <th><input id="C3" type="number" name="C3" placeholder="Mpg 3"></th>
+                                  <td>0.0</td>
+                                  <td>0.0</td>
+                          				<td>0.0</td>
+                          				<td>0.0</td>
+                                </tr>
+              			             
+                                <tr id="show_4">
+                                  <th><input id="C4" type="number" name="C4" placeholder="Mpg 4"></th>
+                                  <td>0.0</td>
+                                  <td>0.0</td>
+                          				<td>0.0</td>
+                          				<td>0.0</td>
+                                </tr>
+                          </table>
+                      </div>
+                  </div>
+              </form>
+            </div>
+</body>
+</html>

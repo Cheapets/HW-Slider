@@ -1,0 +1,51 @@
+#top_part{
+	margin-left: 30px;
+}
+
+#slider_hor_start{
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#slider_vert_start{
+	margin-left: 10px;
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#car_price{
+	margin-left: 30px;
+}
+
+#fuel_con{
+	margin-left: 30px;
+}
+
+#please_enter{
+	margin-left: 30px;
+}
+
+#table1{
+	margin-left: 1.2%;
+}
+
+#button{
+	margin-left: 30px;
+}
+
+#whole_page{
+	margin-top: 20px;
+	margin-left: 16%;
+	width: 67%;
+	border: 3px solid black;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+body{
+	font-family: sans-serif;
+	background-color: blue;
+}
